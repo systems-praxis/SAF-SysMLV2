@@ -426,7 +426,7 @@ library package SAF_ViewExtensions {
         doc Presentation /* A tabular format listing context roles, context elements, and respective descriptions. */
         satisfy SystemContextDefinitionViewpoint;
     }
-    view def <SAF_F1_SCXE> System_Context_Exchange_View_Definition :> iv {
+    view def <SAF_F1_SCXE> System_Context_Exchange_View_Definition :> iv, iv {
         doc Purpose
         /* The System Context Exchange Viewpoint serves for the identification and definition of external interfaces of the SOI that are used to interact,
          * e.g., users, external systems, and other external entities defined in the given context of the SOI. The System Context Exchange Viewpoint:
@@ -860,7 +860,7 @@ library package SAF_ViewExtensions {
          */
         satisfy SystemCapabilityMappingViewpoint;
     }
-    view def <SAF_F8_SRQT_Matrix> System_Requirement_Traceability_View_Definition :> grv {
+    view def <SAF_F8_SRQT> System_Requirement_Traceability_View_Definition :> grv {
         doc Purpose
         /* The System Requirement Traceability Viewpoint specifies for every System Requirement the traceability to the functional domain level:
          *
@@ -909,7 +909,7 @@ library package SAF_ViewExtensions {
          */
         satisfy LogicalStructureDefinitionViewpoint;
     }
-    view def <SAF_F4_LIEX> Logical_Internal_Exchange_View_Definition :> iv {
+    view def <SAF_L4_LIEX> Logical_Internal_Exchange_View_Definition :> iv {
         doc Purpose
         /* The Logical Internal Exchange Viewpoint serves for the identification and definition of interfaces of elements of the logical system.
          * Also, the delegation of system element interfaces to the logical system boundary interfaces is covered.
@@ -934,7 +934,7 @@ library package SAF_ViewExtensions {
          */
         satisfy LogicalInternalExchangeViewpoint;
     }
-    view def <SAF_F4_LITI> Logical_Internal_Interaction_View_Definition :> sv {
+    view def <SAF_L4_LITI> Logical_Internal_Interaction_View_Definition :> sv {
         doc Purpose
         /* The Logical Internal Interaction Viewpoint describes System internal behavior based on the exchange between the Logical SOI Elements Usage.
          * It depicts the sequence of interactions between the Logical SOI Elements and the exchanged Domain Item Kinds needed to accomplish
@@ -952,7 +952,7 @@ library package SAF_ViewExtensions {
          */
         satisfy LogicalInternalInteractionViewpoint;
     }
-    view def <SAF_F4_LFUM_Matrix> Logical_Functional_Mapping_View_Definition :> grv {
+    view def <SAF_L8_LFUM> Logical_Functional_Mapping_View_Definition :> grv {
         doc Purpose
         /* The Logical Functional Mapping Viewpoint supports the definition of assignment of system functions
          * and system partial functions to logical system elements.
@@ -1179,7 +1179,7 @@ library package SAF_ViewExtensions {
         doc Presentation /* A tabular format listing Physical Interface usages, their ports, and flow items. */
         satisfy PhysicalInterfaceDefinitionViewpoint;
     }
-    view def <SAF_P8_PFUM_Matrix> Physical_Functional_Mapping_View_Definition :> grv {
+    view def <SAF_P8_PFUM> Physical_Functional_Mapping_View_Definition :> grv {
         doc Purpose
         /* The Physical Functional Mapping Viewpoint supports the analysis of the assignment of system functions
          * and system partial functions to physical system elements. The result shall be computed from the assigment
@@ -1201,7 +1201,7 @@ library package SAF_ViewExtensions {
          */
         satisfy PhysicalFunctionalMappingViewpoint;
     }
-    view def <SAF_P8_PLIM_Matrix> Physical_Logical_Item_Mapping_View_Definition :> grv {
+    view def <SAF_P8_PLIM> Physical_Logical_Item_Mapping_View_Definition :> grv {
         doc Purpose /* The Physical Logical Item Mapping Viewpoint specifies the realization of the System Domain Kinds by Physical Exchange Kinds. */
         doc Applicability
         /* The Physical Internal Exchange Viewpoint supports the “Design Definition Process” activities of the
@@ -1216,7 +1216,7 @@ library package SAF_ViewExtensions {
          */
         satisfy PhysicalLogicalItemMappingViewpoint;
     }
-    view def <SAF_P8_PLOM_Matrix> Physical_Logical_Mapping_View_Definition :> grv {
+    view def <SAF_P8_PLOM> Physical_Logical_Mapping_View_Definition :> grv {
         doc Purpose
         /* The Physical Logical Mapping Viewpoint supports the definition of the realization of conceptual logical
          * system elements by physical system elements comprising the SOI.
